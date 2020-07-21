@@ -1,0 +1,9 @@
+spring:
+ application:
+  name: dates-timestamp-in-database
+  
+logging:
+  level:
+    root: info
+    poc.springboot: debug
+  file: /var/log/apps/dates-timestamp-in-database/dates-timestamp-in-database
