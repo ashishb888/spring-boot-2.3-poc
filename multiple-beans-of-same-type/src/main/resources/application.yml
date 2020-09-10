@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: multiple-beans-of-same-type
+    
+logging:  file:    name: /var/tmp/logs/multiple-beans-of-same-type/multiple-beans-of-same-type
+  level:    root: INFO
+    poc.springboot: DEBUG
