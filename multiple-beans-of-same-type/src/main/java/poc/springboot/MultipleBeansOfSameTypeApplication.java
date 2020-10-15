@@ -17,8 +17,11 @@ public class MultipleBeansOfSameTypeApplication {
 
 	@Autowired
 	private Person abPerson;
+	@Qualifier("sbPerson")
 	@Autowired
 	private Person sbPerson;
+	@Autowired
+	private Person person;
 
 	public static void main(String[] args) {
 		SpringApplication.run(MultipleBeansOfSameTypeApplication.class, args);
@@ -29,6 +32,7 @@ public class MultipleBeansOfSameTypeApplication {
 		return args -> {
 			log.debug("abPerson: " + abPerson);
 			log.debug("sbPerson: " + sbPerson);
+			log.debug("person: " + person);
 		};
 	}
 }

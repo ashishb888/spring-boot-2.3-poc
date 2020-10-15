@@ -1,0 +1,6 @@
+Run 1
+
+2020-10-15 17:44:27.413  INFO 14004 --- [           main] p.s.MultipleBeansOfSameTypeApplication   : Started MultipleBeansOfSameTypeApplication in 0.656 seconds (JVM running for 1.221)
+2020-10-15 17:44:27.415 DEBUG 14004 --- [           main] p.s.MultipleBeansOfSameTypeApplication   : abPerson: Person(id=3, name=DP)
+2020-10-15 17:44:27.415 DEBUG 14004 --- [           main] p.s.MultipleBeansOfSameTypeApplication   : sbPerson: Person(id=2, name=SB)
+2020-10-15 17:44:27.415 DEBUG 14004 --- [           main] p.s.MultipleBeansOfSameTypeApplication   : person: Person(id=3, name=DP)
