@@ -1,6 +1,5 @@
 package poc.springboot.domain;
 
-import java.util.HashSet;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -19,8 +18,8 @@ public class Brand {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 	private String name;
-	@OneToMany(mappedBy = "brand", cascade = CascadeType.ALL)
-	private Set<Product> products = new HashSet<>();
+	@OneToMany(mappedBy = "brand", cascade = CascadeType.ALL, orphanRemoval = true, targetEntity = Product.class)
+	private Set<Product> products;
 
 	public Brand() {
 	}

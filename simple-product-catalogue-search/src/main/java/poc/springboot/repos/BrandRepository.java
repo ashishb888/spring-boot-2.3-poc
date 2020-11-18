@@ -1,9 +1,9 @@
 package poc.springboot.repos;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import poc.springboot.domain.Brand;
 
-public interface BrandRepository extends CrudRepository<Brand, Long> {
+public interface BrandRepository extends JpaRepository<Brand, Long> {
 
 }
