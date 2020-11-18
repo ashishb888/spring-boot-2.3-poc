@@ -1,7 +1,10 @@
 spring:
   application:
     name: simple-product-catalogue-search  jpa:    hibernate:      ddl-auto: update
-
+    show-sql: true
+  h2:    console:
+      enabled: true      path: /h2-console
+    
 server:  port: 8090
 
 
