@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: simple-product-catalogue-search  jpa:    hibernate:      ddl-auto: update
+
+server:  port: 8090
+
+
+logging:  file:    name: /var/tmp/logs/${spring.application.name}/${spring.application.name}
+  level:    root: info
+    poc.springboot: debug
