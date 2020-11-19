@@ -18,7 +18,7 @@ public class Brand {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 	private String name;
-	@OneToMany(mappedBy = "brand", cascade = CascadeType.ALL, orphanRemoval = true, targetEntity = Product.class)
+	@OneToMany(mappedBy = "brand", cascade = CascadeType.ALL, orphanRemoval = true)
 	private Set<Product> products;
 
 	public Brand() {
